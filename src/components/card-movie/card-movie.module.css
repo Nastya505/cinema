@@ -2,7 +2,7 @@
 .cards{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     margin: 0 auto;
     gap: 30px;
@@ -29,6 +29,7 @@
 }
 .img{
     max-width: 300px;
+    height: 450px;
     transition: 1s; 
     display: block;
     object-fit: cover;

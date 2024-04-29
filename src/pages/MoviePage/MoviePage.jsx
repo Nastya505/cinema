@@ -31,7 +31,7 @@ const MoviePage = () => {
         }
       );
       setMovie(response.data);
-      console.log(response.data);
+
       const genre = response.data.genres[0].name;
       try {
         const response = await axios.get(
@@ -43,7 +43,6 @@ const MoviePage = () => {
           }
         );
         setSimilarMovies(response.data.docs);
-        console.log(response.data);
       } catch (error) {
         console.error("Error fetching movies:", error);
       }
@@ -59,8 +58,6 @@ const MoviePage = () => {
     getMovieById();
   }, []);
 
-  console.log(movie);
-  console.log(similarMovies);
   return (
     <div className="container">
       <button className={styles.btn} onClick={() => navigate('/')}><IoArrowBackCircleOutline size={40}/></button>

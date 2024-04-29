@@ -12,8 +12,7 @@ const HomePage = () => {
   const [movies, setMovies] = React.useState([]);
   const [currentPage, setCurrentPage] = React.useState(1);
   const [loading, setLoading] = React.useState(true);
-
-  console.log(token)
+  
   const getMovies = async (page) => {
     try {
       const response = await axios.get(`https://api.kinopoisk.dev/v1.4/movie?page=${page}&limit=12`, {

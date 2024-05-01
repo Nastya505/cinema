@@ -1,5 +1,5 @@
 # Project Cinema
-тестовое задание для VK
+тестовое задание
 ### [Demo](https://cinema-bice.vercel.app/)
 
 ### Задача:

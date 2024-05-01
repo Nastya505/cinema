@@ -1,5 +1,4 @@
 # Project Cinema
-тестовое задание
 ### [Demo](https://cinema-bice.vercel.app/)
 
 ### Задача:
